@@ -236,6 +236,10 @@ a {
 .back-discography{
     padding: 3%;
     background-color: #e7ccabae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
 }
 .back-discography article{
     display: flex;
