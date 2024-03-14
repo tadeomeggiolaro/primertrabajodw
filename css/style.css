@@ -208,18 +208,26 @@ a {
     width: 22.5rem;
     border:0;
     display: block;
-    height: 540px;
+    height: 300px;
+
 }
 .shopPolaroid div{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .h-dosshop{
     font-size: 1.375rem;
 }
-
+.name-cash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
 
 .back-discography{
     padding: 3%;
