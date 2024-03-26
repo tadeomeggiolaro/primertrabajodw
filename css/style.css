@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nothing+You+Could+Do&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-
-*{
-    padding:0%;
-    margin:0%;
-    box-sizing:border-box;
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
-
-/*  
+/*
     TITULOS
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
@@ -18,116 +17,131 @@
     font-family: "Handlee", cursive;
     font-weight: 700;
     font-style: normal
-    
+
     COLORES:
     ROJO BF191E
-    VERDE 3f675cd3 
+    VERDE 3f675cd3
     BEIGE E7CCAB
     GRIS/CELESTE ABB19D
 } */
-body{
-    background-image:url("../assets/img/textura\ alpillera.jpg");
+/* Hola Johanna, te comento que hice el css mobile-first e hice
+los @media en 768px-1024px-1440px .
+Boostrap no lo utilice porque no me era util en ninguna parte
+de la pagina */
+body {
+    background-image: url("../assets/img/textura\ alpillera.jpg");
 }
 
-
-header{
+header {
     background-color: #e7ccabc6;
     width: 100%;
     top: 0;
 }
 
-nav{
+nav {
     display: flex;
+    justify-content: space-around;
 
 }
-.musicNav{
-    padding-left: 93%;
-    padding-top: .3125rem;
+
+.back-groundimg {
+    background-image: url(../assets/img/logopag.png);
+    width: 100%;
+    background-size: cover;
+    filter: opacity(50%);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-ul{
+ul {
     display: flex;
-    justify-content:center;
-    gap: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     text-decoration: none;
-    text-decoration-color:#ABB19D;
+    text-decoration-color: #ABB19D;
     align-items: center;
+    gap: .4375rem;
 }
 
-li{
+li {
     font-family: "Nothing You Could Do";
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 3.75rem;
+    font-size: 1rem;
     text-align: center;
     color: #ABB19D;
-    list-style:none;
-    text-decoration:solid;
-}
+    list-style: none;
+    text-decoration: solid;
 
+}
 
 .logoPag {
     margin: 0%;
     width: 18.75rem;
-    
+    display: none;
 }
 
-
-main{
+main {
     width: 100%;
     min-height: 100%;
-    border-top: .625rem solid #bf191fcd ;
+    border-top: .625rem solid #bf191fcd;
     border-bottom: .625rem solid #bf191fcd;
-
 }
-h1{
+
+h1 {
     text-transform: uppercase;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: italic;
-    font-size: 3.125rem;
-    text-shadow: .1875rem -0.125rem rgb(58, 57, 57);
+    font-size: 1rem;
+    text-shadow: .2144px -0.125rem rgb(28, 28, 28);
     color: #3f675cd3;
     background-color: #ABB19D;
     border-bottom: 10px solid #BF191E;
-    
+
 }
 
-h2{
+h2 {
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: italic;
     font-size: 3.75rem;
     color: #3f675cd3;
-    text-shadow: 2px -0.125rem rgb(58, 57, 57);
-}
-h3{
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 3rem;
+    text-shadow: 0.5px -0.125rem rgb(58, 57, 57);
 }
 
-h4{
+h3 {
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1rem;
 }
-p{  
+
+h4 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 10px;
+
+}
+
+p {
     font-family: "Handlee", cursive;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 20px;
+    text-align: center;
 }
-
 
 footer {
     width: 100%;
@@ -136,65 +150,84 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 15px 0px;
+
 }
+
 .section-footer1 {
     align-content: flex-start;
-    width: 50%;
 }
-.section-footer2  {
+
+.section-footer2 {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-right: 3%;
 }
-.div-footer{
+
+.div-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: .9375rem;
-}
-.div-footerfather{
-    display: flex;
-    align-items: center;
-    gap: .9375rem;
+    gap: 5px;
+
 }
 
+.div-footerfather {
+    display: flex;
+    align-items: center;
+
+}
+
+.imgs-footer {
+    width: 15px;
+    color: black;
+    text-shadow: none;
+}
 
 .videoyoutube-history {
     font-family: "Handlee", cursive;
-    color:#3f675cd3;
+    color: #3f675cd3;
     text-decoration: none;
     background-color: #ABB19D;
-    font-size: 3.125rem;
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }
+
 a {
     text-decoration: none;
     color: #ABB19D;
-    text-shadow: 3px -0.125rem rgb(58, 57, 57);
-    
+    text-shadow: 1px 1px rgb(58, 57, 57);
 }
 
-.imgFondo{
+.imgFondo {
     width: 100%;
+    margin-top: .3125rem;
 }
 
-.sectionShop{
+.sectionShop {
     background-color: #e7ccabae;
     display: grid;
     max-width: 100vw;
-    height: 100% ;
+    height: 100%;
     text-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding-left: 3%;
     padding-right: 3%;
+    padding-bottom: 3%;
     row-gap: .625rem;
 }
-.imgShop{
-    width: 360px;
+
+.title-art {
+    text-align: center;
+
+
+}
+
+.imgShop {
+    width: 300px;
     border-top: 10px solid white;
     border-right: 10px solid white;
     border-left: 10px solid white;
@@ -203,25 +236,28 @@ a {
     margin-top: .625rem;
 }
 
-.shopPolaroid{
+.shopPolaroid {
     background-color: white;
-    width: 22.5rem;
-    border:0;
+    width: 300px;
+    border: 0;
     display: block;
     height: 300px;
 
 }
-.shopPolaroid div{
+
+.shopPolaroid div {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
 }
 
-.h-dosshop{
+.h-dosshop {
     font-size: 1.375rem;
 }
-.name-cash{
+
+.name-cash {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,7 +265,7 @@ a {
     padding: 3%;
 }
 
-.back-discography{
+.back-discography {
     padding: 3%;
     background-color: #e7ccabae;
     display: flex;
@@ -237,44 +273,390 @@ a {
     align-items: center;
     gap: 3.125rem;
 }
-.back-discography article{
+
+.back-discography article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .back-discography article img {
-    box-shadow: 0 8px 8px 0  rgba(17, 17, 17, 0.929);
+    box-shadow: 0 8px 8px 0 rgba(17, 17, 17, 0.929);
 }
-.section-history{
-    background-color: #e7ccabae ;
+
+.section-history {
+    background-color: #e7ccabae;
     padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.section-history div{
-    
+
+.section-history div {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.artGrids{
+
+.artGrids {
     display: grid;
     max-width: 100vw;
-    height: 100% ;
-    /* grid-template-columns: repeat(4,1fr); */
+    height: 100%;
     gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background-color: #e7ccabae;
 }
 
-.artGrid{
+.artGrid {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 20px;
 
 }
 
+
+
+@media (min-width:768px) {
+    .logoPag {
+        display: block;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 10px #BF191E;
+
+    }
+
+    nav {
+        justify-content: space-between;
+        margin-right: 10%;
+    }
+
+    main {
+        border-top: none;
+        /* border-bottom: none; */
+    }
+
+    li {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.875rem;
+    }
+
+    .back-groundimg {
+        background-image: url(../assets/img/fondo.jpg);
+        filter: opacity(70%)
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .sectionShop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artGrid img {
+        width: 100%;
+    }
+
+    .artGrids {
+        background-color: #e7ccabae;
+    }
+}
+
+@media (min-width:1024px) {
+    header {
+        background-color: #e7ccabc6;
+        width: 100%;
+        top: 0;
+    }
+
+    nav {
+        display: flex;
+
+    }
+
+    main {
+        border-bottom: 10px solid #BF191E;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: row;
+        text-decoration: none;
+        text-decoration-color: #ABB19D;
+        align-items: center;
+    }
+
+    li {
+        font-family: "Nothing You Could Do";
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+        color: #ABB19D;
+        list-style: none;
+        text-decoration: solid;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        /* font-weight: 600; */
+        font-style: italic;
+        font-size: 3.125rem;
+        text-shadow: .1875rem -0.125rem rgb(58, 57, 57);
+        color: #3f675cd3;
+        background-color: #ABB19D;
+        border-bottom: 10px solid #BF191E;
+
+    }
+
+    h2 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 3.75rem;
+        color: #3f675cd3;
+        text-shadow: 2px -0.125rem rgb(58, 57, 57);
+    }
+
+    h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2rem;
+    }
+
+    p {
+        font-family: "Handlee", cursive;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.5rem;
+    }
+
+    .videoyoutube-history {
+        font-family: "Handlee", cursive;
+        color: #3f675cd3;
+        text-decoration: none;
+        background-color: #ABB19D;
+        font-size: 3.125rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ABB19D;
+        text-shadow: 3px -0.125rem rgb(58, 57, 57);
+
+    }
+
+    .imgFondo {
+        width: 100%;
+        margin-top: .3125rem;
+    }
+
+    .sectionShop {
+        background-color: #e7ccabae;
+        display: grid;
+        max-width: 100vw;
+        height: 100%;
+        text-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 15%;
+        padding-right: 3%;
+        row-gap: .625rem;
+    }
+
+    .imgShop {
+        width: 360px;
+        border-top: 10px solid white;
+        border-right: 10px solid white;
+        border-left: 10px solid white;
+        display: block;
+        margin-top: .625rem;
+        border-bottom: 10px solid white;
+    }
+
+    .shopPolaroid {
+        background-color: white;
+        width: 22.5rem;
+        border: 0;
+        display: block;
+        height: 300px;
+
+    }
+
+    .shopPolaroid div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .h-dosshop {
+        font-size: 1.375rem;
+    }
+
+    .name-cash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .back-discography {
+        padding: 3%;
+        background-color: #e7ccabae;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.125rem;
+    }
+
+    .back-discography article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-discography article img {
+        box-shadow: 0 8px 8px 0 rgba(17, 17, 17, 0.929);
+    }
+
+    .section-history {
+        background-color: #e7ccabae;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-history div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-art {
+        background-color: #e7ccabae;
+        display: grid;
+        max-width: 100vw;
+        height: 100%;
+        text-wrap: wrap;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 3%;
+        padding-right: 3%;
+        row-gap: .625rem;
+    }
+
+    .artGrids {
+        display: grid;
+        max-width: 100vw;
+        height: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+
+    .artGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .imgs-footer {
+        width: 30px;
+    }
+
+    @media (min-width:1440px) {
+
+        h3 {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        h4 {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        .img-discography:hover {
+            width: 600px;
+        }
+
+        .back-groundimg {
+            width: 100%;
+            height: 520px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #3f675cd3;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .section-footer1 {
+            align-content: flex-start;
+        }
+
+        .section-footer2 {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 3%;
+        }
+
+        .imgs-footer {
+            width: 15px;
+        }
+
+        .scale-up-center:hover {
+            transform: scale(1.5)
+        }
+
+    }
+}
