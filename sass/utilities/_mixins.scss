@@ -1,0 +1,12 @@
+@mixin borders {
+    @include borderBottom();
+    @include borderTop()
+}
+
+@mixin borderTop {
+    border-top: .625rem solid #bf191fcd;
+}
+
+@mixin borderBottom {
+    border-bottom: .625rem solid #bf191fcd;
+}

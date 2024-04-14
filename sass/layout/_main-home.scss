@@ -1,0 +1,42 @@
+main {
+    width: 100%;
+    min-height: 100%;
+    @include borders ();
+    
+
+    .back-groundimg {
+        background-image: url(../assets/img/logopag.png);
+        width: 100%;
+        background-size: cover;
+        filter: opacity(50%);
+        background-color: #cccccc;
+        height: 69vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+// 
+
+// }
+
+// h2 {
+//     font-family: "Lato", sans-serif;
+//     font-weight: 100;
+//     font-style: italic;
+//     font-size: 3.75rem;
+//     color: #3f675cd3;
+//     text-shadow: 0.5px -0.125rem rgb(58, 57, 57);
+// }
+
+
+// }
+
+
+
+
+// a {
+//     text-decoration: none;
+//     color: #ABB19D;
+//     text-shadow: 1px 1px rgb(58, 57, 57);
+// }

@@ -1,0 +1,61 @@
+header {
+    background-color: $cream-background-color;
+    opacity: 90%;
+    width: 100%;
+    top: 0;
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-shadow: .2144px -0.125rem rgb(28, 28, 28);
+        color: $green-letter;
+        background-color: #ABB19D;
+        border-bottom: 10px solid $red-details;
+        padding-top: .3125rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-decoration: none;
+            text-decoration-color: $cream-background-color;
+            align-items: center;
+            gap: .4375rem;
+
+            li {
+                text-align: center;
+                list-style: none;
+                text-decoration: solid;
+
+                a {
+                    font-family: "Nothing You Could Do";
+                    text-decoration: none;
+                    color: $grey-letter-design;
+                    text-shadow: 0.5px 0.5px rgb(58, 57, 57);
+                    font-size: 1rem;
+                    font-weight: 900;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    
+                }
+
+            }
+
+        }
+
+        .logoPag {
+            margin: 0%;
+            width: 18.75rem;
+            display: none;
+        }
+    }
+}

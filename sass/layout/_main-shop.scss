@@ -1,0 +1,51 @@
+.sectionShop {
+    background-color: $cream-opacity;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100vw;
+    height: 100%;
+    text-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    row-gap: .625rem;
+    justify-items: center;
+    .imgShop {
+        width: 300px;
+        border-top: 10px solid white;
+        border-right: 10px solid white;
+        border-left: 10px solid white;
+        border-bottom: 10px solid white;
+        display: block;
+        margin-top: .625rem;
+    }
+
+    .shopPolaroid {
+        background-color: white;
+        width: 300px;
+        border: 0;
+        display: block;
+        height: 300px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        .name-cash {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+
+            .h-dosshop {
+                font-size: 1.375rem;
+            }
+            p{font-size: 1.125rem;}
+        }
+    }
+}

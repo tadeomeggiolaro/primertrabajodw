@@ -1,0 +1,30 @@
+.back-discography {
+    padding: 3%;
+    background-color: #e7ccabae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            box-shadow: 0 8px 8px 0 rgba(17, 17, 17, 0.929);
+            width: 100%;
+        }
+
+        p {
+            font-family: $fontFamily;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+
+        }
+    }
+}

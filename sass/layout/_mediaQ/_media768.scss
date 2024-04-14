@@ -1,0 +1,53 @@
+@media (min-width:768px) {
+    .logoPag {
+        display: block;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 10px #BF191E;
+
+    }
+
+    nav {
+        justify-content: space-between;
+        margin-right: 10%;
+    }
+
+    main {
+        border-top: none;
+        /* border-bottom: none; */
+    }
+
+    li {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.875rem;
+    }
+
+    .back-groundimg {
+        background-image: url(../assets/img/fondo.jpg);
+        filter: opacity(70%)
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .sectionShop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artGrid img {
+        width: 100%;
+    }
+
+    .artGrids {
+        background-color: #e7ccabae;
+    }
+}

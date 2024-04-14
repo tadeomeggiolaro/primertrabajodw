@@ -1,0 +1,57 @@
+
+
+.section-history {
+    background-color: #e7ccabae;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-family: $fontFamily;
+            color: $green-letter;
+            font-size: 48px;
+
+        }
+
+        img {
+            border-radius: 16px;
+            border: 4px solid black;
+            box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+            -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+            margin: 20px 0px;
+        }
+        p{
+            font-family: $fontFamily;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+        }}
+    }
+    
+    .sectionYoutube-history{
+        background-color:$cream-background-color;
+        opacity: 0.9 ;
+        border-top: .625rem solid #bf191fcd;
+    
+        .videoyoutube-history {
+            font-family: $fontFamily;
+            color: $green-letter;
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            opacity: 1;
+        }}
+    
+    
