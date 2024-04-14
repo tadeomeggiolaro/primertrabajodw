@@ -54,4 +54,10 @@
             opacity: 1;
         }}
     
-    
+    @media (min-width:1440px) {
+.section-history{
+    img{
+        max-width: 450px;
+        width: 100%;
+    }
+}}

@@ -7,14 +7,15 @@ header {
     h1 {
         text-transform: uppercase;
         text-align: center;
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
+        font-family: $fontFamily, sans-serif;
+        font-weight: 500;
         font-size: 1.5rem;
-        text-shadow: .2144px -0.125rem rgb(28, 28, 28);
+        // text-shadow: .2144px -0.125rem rgb(28, 28, 28);
         color: $green-letter;
-        background-color: #ABB19D;
+        background-color: $cream-opacity;
         border-bottom: 10px solid $red-details;
         padding-top: .3125rem;
+
     }
 
     .logoPag {
@@ -60,7 +61,7 @@ header {
                     flex-wrap: wrap;
                     flex-direction: column;
                     text-decoration: none;
-                    text-decoration-color: $cream-background-color;
+                    text-decoration-color: $cream-opacity;
                     align-items: center;
                     gap: .4375rem;
 
@@ -72,7 +73,7 @@ header {
                         a {
                             font-family: $fontFamily;
                             text-decoration: none;
-                            color: $grey-letter-design;
+                            color: $green-letter;
                             text-shadow: 0.5px 0.5px rgb(58, 57, 57);
                             font-size: 1rem;
                             font-weight: 900;
@@ -98,8 +99,13 @@ header {
     header {
         display: flex;
         flex-direction: column-reverse;
-        border-bottom: 10px #BF191E;
 
+
+        h1 {
+            font-size: 1.5rem;
+            border-top: 3px solid $redOpacity;
+            font-weight: 600;
+        }
 
         .movil {
             display: none;
@@ -113,7 +119,7 @@ header {
 
             .logoPag {
                 display: block;
-                width: 18.75rem;
+                width: 9rem;
 
             }
 
@@ -139,7 +145,7 @@ header {
                     a {
                         font-family: $fontFamily;
                         text-decoration: none;
-                        color: $grey-letter-design;
+                        color: $green-letter;
                         text-shadow: 0.5px 0.5px rgb(58, 57, 57);
                         font-size: 1rem;
                         font-weight: 900;
@@ -156,8 +162,21 @@ header {
             }
         }
 
-        h1 {
-            font-size: 3rem;
-        }
+
     }
 }
+
+@media (min-width:1440px) {
+    header {
+        
+        nav {
+            .logoPag {width: 14rem;}
+
+            ul {
+                li {
+                    a {font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}}

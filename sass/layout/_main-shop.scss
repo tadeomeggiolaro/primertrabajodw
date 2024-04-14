@@ -49,3 +49,8 @@
         }
     }
 }
+@media (min-width:768px) {
+    .sectionShop{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

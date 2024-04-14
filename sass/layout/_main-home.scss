@@ -16,6 +16,14 @@ main {
         background-size: cover;
     }
 }
+@media (min-width:768px) { 
+    
+    main {.back-groundimg {
+        background-image: url(../assets/img/fondo.jpg);
+        filter: opacity(70%)
+    }
+    
+}}
 // 
 
 // }

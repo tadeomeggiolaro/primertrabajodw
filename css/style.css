@@ -39,7 +39,7 @@ footer .section-footer1 .div-footerfather div .div-footer {
   gap: 5px;
 }
 footer .section-footer1 .div-footerfather div .div-footer h4 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 10px;
@@ -67,11 +67,10 @@ header h1 {
   text-transform: uppercase;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
-  text-shadow: 0.2144px -0.125rem rgb(28, 28, 28);
   color: rgba(63, 103, 92, 0.8274509804);
-  background-color: #ABB19D;
+  background-color: rgba(231, 204, 171, 0.6823529412);
   border-bottom: 10px solid #BF191E;
   padding-top: 0.3125rem;
 }
@@ -105,7 +104,7 @@ header .movil .container_flex nav ul {
   flex-wrap: wrap;
   flex-direction: column;
   text-decoration: none;
-  text-decoration-color: #E7CCAB;
+  text-decoration-color: rgba(231, 204, 171, 0.6823529412);
   align-items: center;
   gap: 0.4375rem;
 }
@@ -117,7 +116,7 @@ header .movil .container_flex nav ul li {
 header .movil .container_flex nav ul li a {
   font-family: "Lato";
   text-decoration: none;
-  color: #ABB19D;
+  color: rgba(63, 103, 92, 0.8274509804);
   text-shadow: 0.5px 0.5px rgb(58, 57, 57);
   font-size: 1rem;
   font-weight: 900;
@@ -132,7 +131,11 @@ header .movil .container_flex nav ul li .linkSelected {
   header {
     display: flex;
     flex-direction: column-reverse;
-    border-bottom: 10px #BF191E;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    border-top: 3px solid rgba(191, 25, 31, 0.8039215686);
+    font-weight: 600;
   }
   header .movil {
     display: none;
@@ -144,7 +147,7 @@ header .movil .container_flex nav ul li .linkSelected {
   }
   header nav .logoPag {
     display: block;
-    width: 18.75rem;
+    width: 9rem;
   }
   header nav .bigScreenmenu {
     display: flex;
@@ -167,7 +170,7 @@ header .movil .container_flex nav ul li .linkSelected {
   header nav ul li a {
     font-family: "Lato";
     text-decoration: none;
-    color: #ABB19D;
+    color: rgba(63, 103, 92, 0.8274509804);
     text-shadow: 0.5px 0.5px rgb(58, 57, 57);
     font-size: 1rem;
     font-weight: 900;
@@ -177,8 +180,13 @@ header .movil .container_flex nav ul li .linkSelected {
   header nav ul li .linkSelected {
     text-decoration: underline;
   }
-  header h1 {
-    font-size: 3rem;
+}
+@media (min-width: 1440px) {
+  header nav .logoPag {
+    width: 14rem;
+  }
+  header nav ul li a {
+    font-size: 1.5rem;
   }
 }
 body {
@@ -187,10 +195,10 @@ body {
 
 .artGrids {
   display: grid;
-  max-width: 100vw;
+  max-width: 100%;
   height: 100%;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   background-color: rgba(231, 204, 171, 0.6823529412);
   padding-bottom: 8px;
 }
@@ -209,8 +217,21 @@ body {
 .artGrids .artGrid img {
   border-radius: 10px;
   border: 5px solid black;
+  max-width: 100%;
 }
 
+@media (min-width: 600px) {
+  .artGrids {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+}
+@media (min-width: 995px) {
+  .artGrids {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+  }
+}
 .back-discography {
   padding: 3%;
   background-color: rgba(231, 204, 171, 0.6823529412);
@@ -227,8 +248,10 @@ body {
   gap: 20px;
 }
 .back-discography article img {
-  box-shadow: 0 8px 8px 0 rgba(17, 17, 17, 0.929);
   width: 100%;
+  box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
 }
 .back-discography article p {
   font-family: "Lato";
@@ -237,6 +260,12 @@ body {
   font-size: 20px;
 }
 
+@media (min-width: 768px) {
+  .img-discography {
+    width: 100%;
+    max-width: 450px;
+  }
+}
 .section-history {
   background-color: rgba(231, 204, 171, 0.6823529412);
   padding: 2%;
@@ -287,6 +316,12 @@ body {
   opacity: 1;
 }
 
+@media (min-width: 1440px) {
+  .section-history img {
+    max-width: 450px;
+    width: 100%;
+  }
+}
 main {
   width: 100%;
   min-height: 100%;
@@ -305,6 +340,12 @@ main .back-groundimg {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  main .back-groundimg {
+    background-image: url(../assets/img/fondo.jpg);
+    filter: opacity(70%);
+  }
+}
 .sectionShop {
   background-color: rgba(231, 204, 171, 0.6823529412);
   display: grid;
@@ -354,285 +395,9 @@ main .back-groundimg {
   font-size: 1.125rem;
 }
 
-@media (min-width: 1440px) {
-  h3 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1rem;
-  }
-  h4 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 20px;
-  }
-  .img-discography:hover {
-    width: 300px;
-  }
-  .back-groundimg {
-    width: 100%;
-    height: 520px;
-  }
-  footer {
-    width: 100%;
-    background-color: rgba(63, 103, 92, 0.8274509804);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .section-footer1 {
-    align-content: flex-start;
-  }
-  .section-footer2 {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 3%;
-  }
-  .imgs-footer {
-    width: 15px;
-  }
-}
-@media (min-width: 1024px) {
-  header {
-    background-color: rgba(231, 204, 171, 0.7764705882);
-    width: 100%;
-    top: 0;
-  }
-  nav {
-    display: flex;
-  }
-  main {
-    border-bottom: 10px solid #BF191E;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    flex-direction: row;
-    text-decoration: none;
-    text-decoration-color: #ABB19D;
-    align-items: center;
-  }
-  li {
-    font-family: "Nothing You Could Do";
-    font-weight: 600;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 30px;
-    text-align: center;
-    color: #ABB19D;
-    list-style: none;
-    text-decoration: solid;
-  }
-  h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    /* font-weight: 600; */
-    font-style: italic;
-    font-size: 3.125rem;
-    text-shadow: 0.1875rem -0.125rem rgb(58, 57, 57);
-    color: rgba(63, 103, 92, 0.8274509804);
-    background-color: #ABB19D;
-    border-bottom: 10px solid #BF191E;
-  }
-  h2 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 3.75rem;
-    color: rgba(63, 103, 92, 0.8274509804);
-    text-shadow: 2px -0.125rem rgb(58, 57, 57);
-  }
-  h3 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 3rem;
-  }
-  h4 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2rem;
-  }
-  p {
-    font-family: "Handlee", cursive;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.5rem;
-  }
-  .videoyoutube-history {
-    font-family: "Handlee", cursive;
-    color: rgba(63, 103, 92, 0.8274509804);
-    text-decoration: none;
-    background-color: #ABB19D;
-    font-size: 3.125rem;
-    display: flex;
-    justify-content: center;
-  }
-  a {
-    text-decoration: none;
-    color: #ABB19D;
-    text-shadow: 3px -0.125rem rgb(58, 57, 57);
-  }
-  .imgFondo {
-    width: 100%;
-    margin-top: 0.3125rem;
-  }
-  .sectionShop {
-    background-color: rgba(231, 204, 171, 0.6823529412);
-    display: grid;
-    max-width: 100vw;
-    height: 100%;
-    text-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 15%;
-    padding-right: 3%;
-    row-gap: 0.625rem;
-  }
-  .imgShop {
-    width: 360px;
-    border-top: 10px solid white;
-    border-right: 10px solid white;
-    border-left: 10px solid white;
-    display: block;
-    margin-top: 0.625rem;
-    border-bottom: 10px solid white;
-  }
-  .shopPolaroid {
-    background-color: white;
-    width: 22.5rem;
-    border: 0;
-    display: block;
-    height: 300px;
-  }
-  .shopPolaroid div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .h-dosshop {
-    font-size: 1.375rem;
-  }
-  .name-cash {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-  }
-  .back-discography {
-    padding: 3%;
-    background-color: rgba(231, 204, 171, 0.6823529412);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.125rem;
-  }
-  .back-discography article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .back-discography article img {
-    box-shadow: 0 8px 8px 0 rgba(17, 17, 17, 0.929);
-  }
-  .section-history {
-    background-color: rgba(231, 204, 171, 0.6823529412);
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .section-history div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .section-art {
-    background-color: rgba(231, 204, 171, 0.6823529412);
-    display: grid;
-    max-width: 100vw;
-    height: 100%;
-    text-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 3%;
-    padding-right: 3%;
-    row-gap: 0.625rem;
-  }
-  .artGrids {
-    display: grid;
-    max-width: 100vw;
-    height: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  .artGrid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 30px;
-  }
-  .imgs-footer {
-    width: 30px;
-  }
-}
 @media (min-width: 768px) {
-  .logoPag {
-    display: block;
-  }
-  header {
-    display: flex;
-    flex-direction: column-reverse;
-    border-bottom: 10px #BF191E;
-  }
-  header .movil {
-    display: none;
-  }
-  header nav {
-    justify-content: space-between;
-    margin-right: 10%;
-  }
-  header nav li {
-    font-size: 20px;
-    text-align: center;
-  }
-  header h1 {
-    font-size: 3rem;
-  }
-  main {
-    border-top: none;
-    /* border-bottom: none; */
-  }
-  p {
-    font-size: 1.875rem;
-  }
-  .back-groundimg {
-    background-image: url(../assets/img/fondo.jpg);
-    filter: opacity(70%);
-  }
   .sectionShop {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .artGrid img {
-    width: 100%;
-  }
-  .artGrids {
-    background-color: rgba(231, 204, 171, 0.6823529412);
   }
 }
 

@@ -15,8 +15,12 @@
         gap: 20px;
 
         img {
-            box-shadow: 0 8px 8px 0 rgba(17, 17, 17, 0.929);
+
             width: 100%;
+            box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+            -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+
         }
 
         p {
@@ -26,5 +30,13 @@
             font-size: 20px;
 
         }
+    }
+}
+
+@media (min-width:768px) {
+    .img-discography {
+        width: 100%;
+        max-width: 450px;
+
     }
 }
