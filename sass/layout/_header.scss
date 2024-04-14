@@ -17,45 +17,147 @@ header {
         padding-top: .3125rem;
     }
 
-    nav {
-        display: flex;
-        justify-content: space-around;
+    .logoPag {
+        display: none;
+    }
 
-        ul {
+    .bigScreenmenu {
+        display: none;
+    }
+
+    .movil {
+        #btn_menu {
+            display: none;
+        }
+
+        .btn_menu {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-            text-decoration: none;
-            text-decoration-color: $cream-background-color;
-            align-items: center;
-            gap: .4375rem;
+            width: 100%;
 
-            li {
-                text-align: center;
-                list-style: none;
-                text-decoration: solid;
-
-                a {
-                    font-family: "Nothing You Could Do";
-                    text-decoration: none;
-                    color: $grey-letter-design;
-                    text-shadow: 0.5px 0.5px rgb(58, 57, 57);
-                    font-size: 1rem;
-                    font-weight: 900;
-                    font-style: normal;
-                    text-transform: uppercase;
-                    
-                }
-
+            .bi {
+                color: $green-letter;
+                font-size: 36px;
             }
+        }
+
+        #btn_menu:checked~.container_flex {
+            display: block;
+
+
 
         }
 
-        .logoPag {
-            margin: 0%;
-            width: 18.75rem;
+        .container_flex {
             display: none;
+
+            nav {
+
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    text-decoration: none;
+                    text-decoration-color: $cream-background-color;
+                    align-items: center;
+                    gap: .4375rem;
+
+                    li {
+                        text-align: center;
+                        list-style: none;
+                        text-decoration: solid;
+
+                        a {
+                            font-family: $fontFamily;
+                            text-decoration: none;
+                            color: $grey-letter-design;
+                            text-shadow: 0.5px 0.5px rgb(58, 57, 57);
+                            font-size: 1rem;
+                            font-weight: 900;
+                            font-style: normal;
+                            text-transform: uppercase;
+                        }
+
+                        .linkSelected {
+                            text-decoration: underline;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 10px #BF191E;
+
+
+        .movil {
+            display: none;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10%;
+
+            .logoPag {
+                display: block;
+                width: 18.75rem;
+
+            }
+
+            .bigScreenmenu {
+                display: flex;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                text-decoration: none;
+                text-decoration-color: $cream-background-color;
+                align-items: center;
+                gap: .4375rem;
+
+                li {
+                    text-align: center;
+                    list-style: none;
+                    text-decoration: solid;
+
+                    a {
+                        font-family: $fontFamily;
+                        text-decoration: none;
+                        color: $grey-letter-design;
+                        text-shadow: 0.5px 0.5px rgb(58, 57, 57);
+                        font-size: 1rem;
+                        font-weight: 900;
+                        font-style: normal;
+                        text-transform: uppercase;
+                    }
+
+                    .linkSelected {
+                        text-decoration: underline;
+                    }
+
+                }
+
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
         }
     }
 }

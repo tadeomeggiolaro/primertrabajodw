@@ -19,20 +19,39 @@
 </head>
 
 <body>
+
     <header>
         <h1>No weak heart will prosper.</h1>
         <nav>
-            <img class="logoPag" src="../assets/img/logopag.png" alt="">
-            <ul>
+            <img class="logoPag" src="../assets/img/logopag.png">
+            <ul class="bigScreenmenu">
                 <li><a href="../index.html">home</a></li>
                 <li><a href="./history.html">history</a></li>
                 <li><a href="./discography.html">discography</a></li>
                 <li><a href="./shop.html">shop</a></li>
-                <li><a href="#">art</a></li>
-            </ul>
+                <li><a class="linkSelected" href="#">art</a></li>
+                </ul>
+                <div class="movil">
+                    <input type="checkbox" id="btn_menu">
+                    <label for="btn_menu" class="btn_menu flex_column">
+                        <i class="bi bi-list"></i>
+                    </label>
+                    <div class="container_flex">
+                        <nav>
+                            <ul class="container_menu flex_column">
+                                <li><a href="../index.html">home</a></li>
+                                <li><a href="./history.html">history</a></li>
+                                <li><a href="./discography.html">discography</a></li>
+                                <li><a href="./shop.html">shop</a></li>
+                                <li><a class="linkSelected" href="#">art</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
         </nav>
-    </header>
 
+
+    </header>
     <main>
 
         <section class="artGrids">

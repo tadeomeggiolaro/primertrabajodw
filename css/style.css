@@ -24,7 +24,6 @@ footer .section-footer1 .div-footerfather {
 }
 footer .section-footer1 .div-footerfather h3 {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
   font-size: 1rem;
   text-wrap: nowrap;
 }
@@ -76,27 +75,47 @@ header h1 {
   border-bottom: 10px solid #BF191E;
   padding-top: 0.3125rem;
 }
-header nav {
-  display: flex;
-  justify-content: space-around;
+header .logoPag {
+  display: none;
 }
-header nav ul {
+header .bigScreenmenu {
+  display: none;
+}
+header .movil #btn_menu {
+  display: none;
+}
+header .movil .btn_menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .movil .btn_menu .bi {
+  color: rgba(63, 103, 92, 0.8274509804);
+  font-size: 36px;
+}
+header .movil #btn_menu:checked ~ .container_flex {
+  display: block;
+}
+header .movil .container_flex {
+  display: none;
+}
+header .movil .container_flex nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   text-decoration: none;
   text-decoration-color: #E7CCAB;
   align-items: center;
   gap: 0.4375rem;
 }
-header nav ul li {
+header .movil .container_flex nav ul li {
   text-align: center;
   list-style: none;
   text-decoration: solid;
 }
-header nav ul li a {
-  font-family: "Nothing You Could Do";
+header .movil .container_flex nav ul li a {
+  font-family: "Lato";
   text-decoration: none;
   color: #ABB19D;
   text-shadow: 0.5px 0.5px rgb(58, 57, 57);
@@ -105,12 +124,63 @@ header nav ul li a {
   font-style: normal;
   text-transform: uppercase;
 }
-header nav .logoPag {
-  margin: 0%;
-  width: 18.75rem;
-  display: none;
+header .movil .container_flex nav ul li .linkSelected {
+  text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 10px #BF191E;
+  }
+  header .movil {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+  }
+  header nav .logoPag {
+    display: block;
+    width: 18.75rem;
+  }
+  header nav .bigScreenmenu {
+    display: flex;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+    text-decoration-color: #E7CCAB;
+    align-items: center;
+    gap: 0.4375rem;
+  }
+  header nav ul li {
+    text-align: center;
+    list-style: none;
+    text-decoration: solid;
+  }
+  header nav ul li a {
+    font-family: "Lato";
+    text-decoration: none;
+    color: #ABB19D;
+    text-shadow: 0.5px 0.5px rgb(58, 57, 57);
+    font-size: 1rem;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  header nav ul li .linkSelected {
+    text-decoration: underline;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+}
 body {
   background-image: url("../assets/img/textura alpillera.jpg");
 }
@@ -530,17 +600,23 @@ main .back-groundimg {
     flex-direction: column-reverse;
     border-bottom: 10px #BF191E;
   }
-  nav {
+  header .movil {
+    display: none;
+  }
+  header nav {
     justify-content: space-between;
     margin-right: 10%;
+  }
+  header nav li {
+    font-size: 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 3rem;
   }
   main {
     border-top: none;
     /* border-bottom: none; */
-  }
-  li {
-    font-size: 20px;
-    text-align: center;
   }
   p {
     font-size: 1.875rem;
@@ -548,9 +624,6 @@ main .back-groundimg {
   .back-groundimg {
     background-image: url(../assets/img/fondo.jpg);
     filter: opacity(70%);
-  }
-  h1 {
-    font-size: 3rem;
   }
   .sectionShop {
     grid-template-columns: repeat(2, 1fr);
