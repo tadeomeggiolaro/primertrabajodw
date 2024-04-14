@@ -16,9 +16,7 @@
 
         .title-art {
             text-align: center;
-            font-size: 48px;
-            font-family: $fontFamily;
-            color: $green-letter;
+            @include standarText(3rem,400,$green-letter)
         }
         img{
             border-radius: 10px;

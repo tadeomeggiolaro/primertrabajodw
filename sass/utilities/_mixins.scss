@@ -10,3 +10,10 @@
 @mixin borderBottom {
     border-bottom: .625rem solid #bf191fcd;
 }
+
+@mixin standarText ($fontSize: 1rem, $fontWeigth: 400 ,$color:black) {
+    font-size: $fontSize;
+    font-weight: $fontWeigth;
+    color: $color;
+    font-family: $fontFamily;
+}

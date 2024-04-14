@@ -1,5 +1,3 @@
-
-
 .section-history {
     background-color: #e7ccabae;
     padding: 2%;
@@ -16,48 +14,39 @@
         align-items: center;
 
         h2 {
-            font-family: $fontFamily;
-            color: $green-letter;
-            font-size: 48px;
-
+            @include standarText(3rem, 400, $green-letter)
         }
 
         img {
             border-radius: 16px;
             border: 4px solid black;
-            box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-            -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-            -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+            @extend %imgShadow;
             margin: 20px 0px;
+            filter: grayscale(100%);
+            max-width: 31.25rem;
+            width: 100%;
         }
-        p{
-            font-family: $fontFamily;
-            font-weight: 600;
-            font-size: 20px;
+
+        p {
             text-align: center;
-        }}
+            @include standarText(1.25rem, 600)
+        }
     }
-    
-    .sectionYoutube-history{
-        background-color:$cream-background-color;
-        opacity: 0.9 ;
-        border-top: .625rem solid #bf191fcd;
-    
-        .videoyoutube-history {
-            font-family: $fontFamily;
-            color: $green-letter;
-            text-decoration: none;
-            font-size: 20px;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            opacity: 1;
-        }}
-    
-    @media (min-width:1440px) {
-.section-history{
-    img{
-        max-width: 450px;
-        width: 100%;
+}
+
+.sectionYoutube-history {
+    background-color: $cream-background-color;
+    opacity: 0.9;
+    border-top: .625rem solid #bf191fcd;
+
+    .videoyoutube-history {
+
+        text-decoration: none;
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        opacity: 1;
+        @include standarText (1.25rem, 400, $green-letter)
     }
-}}
+}

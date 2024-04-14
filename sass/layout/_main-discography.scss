@@ -6,7 +6,6 @@
     align-items: center;
     gap: 3.125rem;
 
-
     article {
         display: flex;
         flex-direction: column;
@@ -15,28 +14,20 @@
         gap: 20px;
 
         img {
-
             width: 100%;
-            box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-            -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-            -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-
+            @extend %imgShadow
         }
 
         p {
-            font-family: $fontFamily;
             text-align: center;
-            font-weight: 700;
-            font-size: 20px;
-
+            @include standarText(1.25rem, 700);
         }
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .img-discography {
         width: 100%;
         max-width: 450px;
-
     }
 }

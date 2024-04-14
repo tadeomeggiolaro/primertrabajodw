@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.section-history div img, .back-discography article img {
+  box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -23,8 +29,10 @@ footer .section-footer1 .div-footerfather {
   align-items: center;
 }
 footer .section-footer1 .div-footerfather h3 {
-  font-family: "Lato", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  font-family: "Lato";
   text-wrap: nowrap;
 }
 footer .section-footer1 .div-footerfather div {
@@ -39,10 +47,10 @@ footer .section-footer1 .div-footerfather div .div-footer {
   gap: 5px;
 }
 footer .section-footer1 .div-footerfather div .div-footer h4 {
-  font-family: "Lato", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 0.625rem;
   font-weight: 400;
-  font-size: 10px;
+  color: black;
+  font-family: "Lato";
 }
 footer .section-footer2 {
   width: 50%;
@@ -66,13 +74,13 @@ header {
 header h1 {
   text-transform: uppercase;
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: rgba(63, 103, 92, 0.8274509804);
   background-color: rgba(231, 204, 171, 0.6823529412);
   border-bottom: 10px solid #BF191E;
   padding-top: 0.3125rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(63, 103, 92, 0.8274509804);
+  font-family: "Lato";
 }
 header .logoPag {
   display: none;
@@ -114,14 +122,14 @@ header .movil .container_flex nav ul li {
   text-decoration: solid;
 }
 header .movil .container_flex nav ul li a {
-  font-family: "Lato";
   text-decoration: none;
-  color: rgba(63, 103, 92, 0.8274509804);
   text-shadow: 0.5px 0.5px rgb(58, 57, 57);
-  font-size: 1rem;
-  font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgba(63, 103, 92, 0.8274509804);
+  font-family: "Lato";
 }
 header .movil .container_flex nav ul li .linkSelected {
   text-decoration: underline;
@@ -168,14 +176,14 @@ header .movil .container_flex nav ul li .linkSelected {
     text-decoration: solid;
   }
   header nav ul li a {
-    font-family: "Lato";
     text-decoration: none;
-    color: rgba(63, 103, 92, 0.8274509804);
     text-shadow: 0.5px 0.5px rgb(58, 57, 57);
-    font-size: 1rem;
-    font-weight: 900;
     font-style: normal;
     text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgba(63, 103, 92, 0.8274509804);
+    font-family: "Lato";
   }
   header nav ul li .linkSelected {
     text-decoration: underline;
@@ -210,9 +218,10 @@ body {
 }
 .artGrids .artGrid .title-art {
   text-align: center;
-  font-size: 48px;
-  font-family: "Lato";
+  font-size: 3rem;
+  font-weight: 400;
   color: rgba(63, 103, 92, 0.8274509804);
+  font-family: "Lato";
 }
 .artGrids .artGrid img {
   border-radius: 10px;
@@ -249,15 +258,13 @@ body {
 }
 .back-discography article img {
   width: 100%;
-  box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-  -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
 }
 .back-discography article p {
-  font-family: "Lato";
   text-align: center;
+  font-size: 1.25rem;
   font-weight: 700;
-  font-size: 20px;
+  color: black;
+  font-family: "Lato";
 }
 
 @media (min-width: 768px) {
@@ -281,23 +288,25 @@ body {
   align-items: center;
 }
 .section-history div h2 {
-  font-family: "Lato";
+  font-size: 3rem;
+  font-weight: 400;
   color: rgba(63, 103, 92, 0.8274509804);
-  font-size: 48px;
+  font-family: "Lato";
 }
 .section-history div img {
   border-radius: 16px;
   border: 4px solid black;
-  box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-  -webkit-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 11px 14px 25px 0px rgba(0, 0, 0, 0.24);
   margin: 20px 0px;
+  filter: grayscale(100%);
+  max-width: 31.25rem;
+  width: 100%;
 }
 .section-history div p {
-  font-family: "Lato";
-  font-weight: 600;
-  font-size: 20px;
   text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+  font-family: "Lato";
 }
 
 .sectionYoutube-history {
@@ -306,22 +315,17 @@ body {
   border-top: 0.625rem solid rgba(191, 25, 31, 0.8039215686);
 }
 .sectionYoutube-history .videoyoutube-history {
-  font-family: "Lato";
-  color: rgba(63, 103, 92, 0.8274509804);
   text-decoration: none;
-  font-size: 20px;
   display: flex;
   text-align: center;
   justify-content: center;
   opacity: 1;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(63, 103, 92, 0.8274509804);
+  font-family: "Lato";
 }
 
-@media (min-width: 1440px) {
-  .section-history img {
-    max-width: 450px;
-    width: 100%;
-  }
-}
 main {
   width: 100%;
   min-height: 100%;
@@ -342,7 +346,7 @@ main .back-groundimg {
 
 @media (min-width: 768px) {
   main .back-groundimg {
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../assets/img/fondo.jpeg);
     filter: opacity(70%);
   }
 }
