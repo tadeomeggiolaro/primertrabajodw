@@ -37,7 +37,7 @@
 .sectionYoutube-history {
     background-color: $cream-background-color;
     opacity: 0.9;
-    border-top: .625rem solid #bf191fcd;
+    @include borderTop () ;
 
     .videoyoutube-history {
 
