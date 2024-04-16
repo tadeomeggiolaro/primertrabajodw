@@ -1,6 +1,6 @@
 .back-discography {
     padding: 3%;
-    background-color: #e7ccabae;
+    background-color: $cream-opacity;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,7 @@
 
         img {
             width: 100%;
+            border: 5px solid black;
             @extend %imgShadow
         }
 

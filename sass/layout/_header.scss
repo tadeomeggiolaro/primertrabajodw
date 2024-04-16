@@ -1,13 +1,14 @@
 header {
-    background-color: $cream-background-color;
+    background-color: $cream-opacity;
     opacity: 90%;
     width: 100%;
     top: 0;
 
+
     h1 {
         text-transform: uppercase;
         text-align: center;
-        background-color: $cream-opacity;
+        background-color: $cream-background-color;
         border-bottom: 10px solid $red-details;
         padding-top: .3125rem;
         @include standarText (1.5rem, 500, $green-letter)
@@ -91,6 +92,7 @@ header {
     header {
         display: flex;
         flex-direction: column-reverse;
+
 
 
         h1 {
