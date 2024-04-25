@@ -1,50 +1,29 @@
 main {
     width: 100%;
     min-height: 100%;
-    @include borders ();
-    
+    @include borderBottom ();
+
 
     .back-groundimg {
         background-image: url(../assets/img/logopag.png);
         width: 100%;
         background-size: cover;
         filter: opacity(50%);
-        background-color: $cream-background-color;
+        background-color: $cream-opacity;
         height: 69vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
-@media (min-width:768px) { 
-    
-    main {.back-groundimg {
-        background-image: url(../assets/img/fondo.jpeg);
-        filter: opacity(70%)
+
+@media (min-width:768px) {
+
+    main {
+        .back-groundimg {
+            background-image: url(../assets/img/legendBackground.jpeg);
+            filter: opacity(70%)
+        }
+
     }
-    
-}}
-// 
-
-// }
-
-// h2 {
-//     font-family: "Lato", sans-serif;
-//     font-weight: 100;
-//     font-style: italic;
-//     font-size: 3.75rem;
-//     color: #3f675cd3;
-//     text-shadow: 0.5px -0.125rem rgb(58, 57, 57);
-// }
-
-
-// }
-
-
-
-
-// a {
-//     text-decoration: none;
-//     color: #ABB19D;
-//     text-shadow: 1px 1px rgb(58, 57, 57);
-// }
+}

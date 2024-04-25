@@ -23,7 +23,7 @@
             @extend %imgShadow;
             margin: 20px 0px;
             filter: grayscale(100%);
-            max-width: 31.25rem;
+            max-width: 18.75rem;
             width: 100%;
         }
 
@@ -37,7 +37,7 @@
 .sectionYoutube-history {
     background-color: $cream-background-color;
     opacity: 0.9;
-    @include borderTop () ;
+    @include borderTop ();
 
     .videoyoutube-history {
 
@@ -48,5 +48,27 @@
         justify-content: center;
         opacity: 1;
         @include standarText (1.25rem, 400, $green-letter)
+    }
+}
+
+@media (min-width:1024px) {
+    .section-history {
+        justify-content: space-between;
+
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .historyContent {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .historyReverse {
+            flex-direction: row-reverse;
+        }
     }
 }

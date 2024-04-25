@@ -1,8 +1,10 @@
 header {
     background-color: $cream-opacity;
-    opacity: 90%;
     width: 100%;
-    top: 0;
+
+
+
+
 
 
     h1 {
@@ -22,7 +24,7 @@ header {
         display: none;
     }
 
-    .movil {
+    .mobile {
         #btn_menu {
             display: none;
         }
@@ -71,7 +73,7 @@ header {
                             text-shadow: 0.5px 0.5px rgb(58, 57, 57);
                             font-style: normal;
                             text-transform: uppercase;
-                            @include standarText(1rem,900, $green-letter)
+                            @include standarText(1rem, 900, $green-letter)
                         }
 
                         .linkSelected {
@@ -101,7 +103,7 @@ header {
             font-weight: 600;
         }
 
-        .movil {
+        .mobile {
             display: none;
         }
 
@@ -119,6 +121,7 @@ header {
 
             .bigScreenmenu {
                 display: flex;
+
             }
 
             ul {
@@ -144,7 +147,10 @@ header {
 
                         font-style: normal;
                         text-transform: uppercase;
-                        @include standarText(1rem,900,$green-letter)
+                        @include standarText(1rem, 900, $green-letter)
+                    }
+                    a:hover{
+                        font-size: 1.1rem;
                     }
 
                     .linkSelected {
@@ -162,15 +168,22 @@ header {
 
 @media (min-width:1440px) {
     header {
-        
+
         nav {
-            .logoPag {width: 14rem;}
+            .logoPag {
+                width: 14rem;
+            }
 
             ul {
                 li {
-                    a {font-size: 1.5rem;
+                    a {
+                        font-size: 1.5rem;
+                    }
+                    a:hover{
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
     }
-}}
+}
